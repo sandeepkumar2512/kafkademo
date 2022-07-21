@@ -5,10 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
-public class KafkademoApplication {
+@PropertySource("classpath:application_publisher.properties")
+public class KafkademoApplicationPublisher {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KafkademoApplication.class, args);
+		SpringApplication.run(KafkademoApplicationPublisher.class, args);
 	}
 
 }
